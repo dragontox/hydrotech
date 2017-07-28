@@ -25,3 +25,4 @@ build/
 /run/
 /gradlew
 /gradlew.bat
+/classes/
