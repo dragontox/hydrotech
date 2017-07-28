@@ -12,6 +12,7 @@
 hs_err_pid*
 
 
+
 .gradle/
 .idea/
 .build/
@@ -20,3 +21,7 @@ out/
 build/
 /.idea/
 /.gradle/
+/gradle
+/run/
+/gradlew
+/gradlew.bat
