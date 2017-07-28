@@ -12,6 +12,9 @@ public class BlockBreakMessage {
     
     @SubscribeEvent
     public void sendMessage(BreakEvent event) {
-        event.getPlayer().sendMessage(new TextComponentString(TextFormatting.AQUA + "You broke a piece of the world"));
+        String message = "You broke a piece of the world: ";
+        //String blockName = event.getWorld();
+        //message += blockName;
+        event.getPlayer().sendMessage(new TextComponentString(TextFormatting.AQUA + message));
     }
 }
