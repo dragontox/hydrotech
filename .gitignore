@@ -15,3 +15,6 @@ hs_err_pid*
 .gradle/
 .idea/
 .build/
+eclipse/.metadata/
+out/
+build/
