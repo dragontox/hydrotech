@@ -1,4 +1,4 @@
-package tresy.deathnote.mods;
+package tresy.deathnote.common.mods;
 
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
@@ -11,10 +11,10 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class BlockBreakMessage {
     
     @SubscribeEvent
-    public void sendMessage(BreakEvent event) {
+    public void sendMessage(BreakEvent breakEvent) {
         String message = "You broke a piece of the world: ";
-        //String blockName = event.getWorld();
-        //message += blockName;
-        event.getPlayer().sendMessage(new TextComponentString(TextFormatting.AQUA + message));
+        String blockName = breakEvent.getState().getBlock().getLocalizedName();
+        message += blockName;
+        breakEvent.getPlayer().sendMessage(new TextComponentString(TextFormatting.AQUA + message));
     }
 }

@@ -1,10 +1,10 @@
-package tresy.deathnote;
+package tresy.deathnote.client;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import tresy.deathnote.mods.BlockBreakMessage;
+import tresy.deathnote.common.mods.BlockBreakMessage;
 
 @Mod(modid = DeathNoteMod.MODID, version = DeathNoteMod.VERSION)
 public class DeathNoteMod {
