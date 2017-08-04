@@ -10,9 +10,9 @@ import net.minecraftforge.common.ISpecialArmor;
 
 import javax.annotation.Nonnull;
 
-public class UtilChest extends ItemArmor implements ISpecialArmor {
+public class UtilArmor extends ItemArmor implements ISpecialArmor {
 
-    public UtilChest(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
+    public UtilArmor(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
         super(materialIn, renderIndexIn, equipmentSlotIn);
     }
 
